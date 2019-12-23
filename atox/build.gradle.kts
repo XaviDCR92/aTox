@@ -65,8 +65,10 @@ dependencies {
     debugImplementation(Libraries.leakcanaryAndroid)
 
     testImplementation(Libraries.junit)
+    androidTestImplementation(Libraries.rules)
     androidTestImplementation(Libraries.runner)
     androidTestImplementation(Libraries.espressoCore)
+    androidTestImplementation(Libraries.espressoContrib)
     androidTestImplementation(Libraries.androidJUnit)
 }
 
