@@ -1,3 +1,8 @@
+plugins {
+    id("com.github.ben-manes.versions") version "0.27.0"
+    id(BuildPlugin.download) version BuildPlugin.downloadVersion
+}
+
 buildscript {
     repositories {
         google()
@@ -6,11 +11,9 @@ buildscript {
     dependencies {
         classpath(BuildPlugin.gradle)
         classpath(BuildPlugin.kotlinGradle)
-    }
-}
 
-plugins {
-    id(BuildPlugin.download) version BuildPlugin.downloadVersion
+        classpath("com.github.ben-manes:gradle-versions-plugin:0.27.0")
+    }
 }
 
 allprojects {
